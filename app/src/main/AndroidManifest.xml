@@ -2,19 +2,27 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.koczuba.popularmovies">
 
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
             android:supportsRtl="true"
+            android:name=".App"
             android:theme="@style/AppTheme">
-        <activity android:name=".PosterGridActivity">
+        <activity android:name=".activities.PosterGridActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".activities.MovieDetailActivity">
+        </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="13251092147535dafa6c9e4be51f88f3642c929d" />
     </application>
 
 </manifest>
