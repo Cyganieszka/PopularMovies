@@ -7,11 +7,11 @@ import android.os.Parcelable;
 
 public class Movie implements Parcelable{
 
-    String poster_path;
-    String original_title;
-    String overview;
-    float vote_average;
-    String release_date;
+    private final String poster_path;
+    private final String original_title;
+    private final String overview;
+    private final float vote_average;
+    private final String release_date;
 
 
     public String getPoster_path() {
@@ -35,7 +35,7 @@ public class Movie implements Parcelable{
     }
 
 
-    protected Movie(Parcel in) {
+    private Movie(Parcel in) {
         poster_path = in.readString();
         original_title = in.readString();
         overview = in.readString();

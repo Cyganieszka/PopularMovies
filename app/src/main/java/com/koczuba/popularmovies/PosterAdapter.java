@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 import com.koczuba.popularmovies.data.Movie;
 import com.koczuba.popularmovies.networking.MovieClient;
 import com.squareup.picasso.Picasso;
@@ -16,8 +15,8 @@ import java.util.ArrayList;
 
 public class PosterAdapter extends RecyclerView.Adapter<PosterAdapter.PosterViewHolder>{
 
-    private ArrayList<Movie> movies= new ArrayList<>();
-    private Context ctx;
+    private final ArrayList<Movie> movies= new ArrayList<>();
+    private final Context ctx;
     private final OnPosterClickListener listener;
 
     public PosterAdapter(Context ctx, OnPosterClickListener listener) {
@@ -62,7 +61,7 @@ public class PosterAdapter extends RecyclerView.Adapter<PosterAdapter.PosterView
 
     class PosterViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
-        ImageView posterImage;
+        final ImageView posterImage;
 
         PosterViewHolder(View itemView) {
             super(itemView);

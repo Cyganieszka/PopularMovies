@@ -77,7 +77,7 @@ public class PosterGridActivity extends AppCompatActivity implements PosterAdapt
         // load more pages on scroll
         recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
 
-            private int visibleThreshold = 20;
+            private final int visibleThreshold = 20;
 
             @Override
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {

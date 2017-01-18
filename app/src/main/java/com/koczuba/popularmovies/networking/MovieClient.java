@@ -24,11 +24,11 @@ public class MovieClient {
     private final static String SIZE_w185 = "w185";
     private final static String API_KEY_PARAM = "api_key";
 
-    public static Retrofit.Builder builder = new Retrofit.Builder()
+    private static final Retrofit.Builder builder = new Retrofit.Builder()
             .baseUrl("https://api.themoviedb.org/")
             .addConverterFactory(GsonConverterFactory.create());
 
-    private static OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
+    private static final OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
 
     public static <S> S createService(Class<S> serviceClass) {
         httpClient.addInterceptor(new Interceptor() {

@@ -6,9 +6,9 @@ import android.content.SharedPreferences;
 
 public class Prefs {
 
-    private SharedPreferences prefs;
+    private final SharedPreferences prefs;
     private static Prefs instance;
-    private String appPreferences="app_preferences";
+    private static final String appPreferences="app_preferences";
 
     private Prefs(Context ctx){
         prefs=ctx.getSharedPreferences(appPreferences, Context.MODE_PRIVATE);
