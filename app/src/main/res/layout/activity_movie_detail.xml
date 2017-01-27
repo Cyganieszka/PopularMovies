@@ -15,7 +15,7 @@
             android:id="@+id/activity_movie_detail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:context="com.koczuba.popularmovies.activities.MovieDetailActivity">
+            tools:context="com.koczuba.popularmovies.activities.movieDetail.MovieDetailActivity">
 
         <TextView
                 android:layout_width="0dp"

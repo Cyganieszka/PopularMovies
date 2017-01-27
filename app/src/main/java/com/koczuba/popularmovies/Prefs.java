@@ -22,7 +22,8 @@ public class Prefs {
 
     public static final String MOVIE="movie";
     public static final String MOVIES="movies";
-    public static final String LAYOUT="LAYOUT";
+    public static final String LAYOUT="layout";
+    public static final String PAGES_LOADED="pages_loaded";
 
     private static final String SORT_TYPE="sort";
     public static final String POPULAR="popular";

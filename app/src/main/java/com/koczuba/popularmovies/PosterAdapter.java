@@ -39,8 +39,6 @@ public class PosterAdapter extends RecyclerView.Adapter<PosterAdapter.PosterView
     }
 
 
-
-
     @Override
     public PosterViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_poster, parent, false);
@@ -55,7 +53,6 @@ public class PosterAdapter extends RecyclerView.Adapter<PosterAdapter.PosterView
 
     @Override
     public int getItemCount() {
-        if(movies==null)return 0;
         return movies.size();
     }
 

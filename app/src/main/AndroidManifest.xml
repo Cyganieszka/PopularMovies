@@ -11,14 +11,15 @@
             android:supportsRtl="true"
             android:name=".App"
             android:theme="@style/AppTheme">
-        <activity android:name=".activities.PosterGridActivity">
+        <activity android:name=".activities.moviesGrid.PosterGridActivity"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activities.MovieDetailActivity">
+        <activity android:name=".activities.movieDetail.MovieDetailActivity">
         </activity>
         <meta-data
             android:name="io.fabric.ApiKey"
