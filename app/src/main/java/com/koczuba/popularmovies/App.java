@@ -13,6 +13,7 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         Prefs.init(this);
+        // some DI framework would do this job...
         movieService = MovieClient.createService(MoviesService.class);
         movieDetailVM=new MovieDetailVM();
         movieGridVM=new MovieGridVM(movieService);

@@ -17,7 +17,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MovieClient {
 
-
     private static final String API_KEY= BuildConfig.MOVIES_DB_API_KEY;
     private final static String SIZE_w185 = "w185";
     private final static String API_KEY_PARAM = "api_key";
@@ -44,7 +43,6 @@ public class MovieClient {
         Retrofit retrofit = builder.client(httpClient.build()).build();
         return retrofit.create(serviceClass);
     }
-
 
     private static URL getUrlFromUri(Uri uri){
         URL url = null;

@@ -14,7 +14,6 @@ import com.koczuba.popularmovies.R;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 
-
 public class MovieGridVM extends BaseObservable implements MovieAdapter.OnPosterClickListener {
 
     private MoviesService movieService;

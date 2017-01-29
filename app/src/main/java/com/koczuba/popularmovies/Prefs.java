@@ -21,15 +21,12 @@ public class Prefs {
     }
 
     public static final String MOVIE="movie";
-    public static final String MOVIES="movies";
-    public static final String LAYOUT="layout";
-    public static final String PAGES_LOADED="pages_loaded";
+
 
     private static final String SORT_TYPE="sort";
     public static final String POPULAR="popular";
     public static final String TOP_RATED="top_rated";
     public static final String RATING_FORMAT="%.2f/10";
-    public static int SPLASH_TIME_OUT = 3000;
 
     public static String getSortType(){
         return instance.prefs.getString(SORT_TYPE,POPULAR);

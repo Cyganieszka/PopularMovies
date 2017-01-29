@@ -13,7 +13,6 @@ import com.koczuba.popularmovies.data.Movie;
 
 public class MovieAdapter extends ObservableListAdapter<Movie,MovieAdapter.PosterViewHolder>{
 
-
     private final OnPosterClickListener listener;
 
     MovieAdapter(ObservableArrayList<Movie> movies, OnPosterClickListener listener) {

@@ -3,7 +3,6 @@ package com.koczuba.popularmovies.activities.movie.grid;
 import com.koczuba.popularmovies.data.Movie;
 import com.koczuba.popularmovies.networking.MovieClient;
 
-
 public class MovieVM {
 
     String imageUrl;
