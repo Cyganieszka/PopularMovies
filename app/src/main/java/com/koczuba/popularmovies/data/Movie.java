@@ -34,7 +34,6 @@ public class Movie implements Parcelable{
         return release_date;
     }
 
-
     private Movie(Parcel in) {
         poster_path = in.readString();
         original_title = in.readString();

@@ -1,9 +1,11 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
 
 
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
+    dataBinding.enabled = true
     defaultConfig {
         applicationId "com.koczuba.popularmovies"
         minSdkVersion 16
@@ -21,6 +23,9 @@ android {
             it.buildConfigField 'String', 'MOVIES_DB_API_KEY', MOVIES_DB_API_KEY
         }
     }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
 }
 repositories {
     mavenCentral()
@@ -36,5 +41,6 @@ dependencies {
     compile 'com.squareup.retrofit2:converter-gson:2.0.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
     testCompile 'junit:junit:4.12'
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
 }

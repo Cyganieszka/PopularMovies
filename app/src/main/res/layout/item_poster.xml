@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+                name="viewModel"
+                type="com.koczuba.popularmovies.activities.movie.grid.MovieVM" />
+    </data>
+<FrameLayout
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="wrap_content">
-
-
-
     <ImageView
                android:id="@+id/poster_image"
                android:adjustViewBounds="true"
+               app:posterUrl="@{viewModel.imageUrl}"
                android:layout_width="match_parent"
                android:layout_height="match_parent"/>
     <TextView
@@ -18,3 +23,4 @@
             android:textColor="#fff"
             android:id="@+id/nr"/>
 </FrameLayout>
+</layout>

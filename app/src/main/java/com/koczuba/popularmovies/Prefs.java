@@ -28,6 +28,8 @@ public class Prefs {
     private static final String SORT_TYPE="sort";
     public static final String POPULAR="popular";
     public static final String TOP_RATED="top_rated";
+    public static final String RATING_FORMAT="%.2f/10";
+    public static int SPLASH_TIME_OUT = 3000;
 
     public static String getSortType(){
         return instance.prefs.getString(SORT_TYPE,POPULAR);
