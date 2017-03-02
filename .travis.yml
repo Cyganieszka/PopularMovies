@@ -19,6 +19,10 @@ android:
     - extra-android-m2repository
     - addon-google_apis-google-19
 
+  licenses:
+    - android-sdk-license-.+
+    - '.+'
+
 
 after_success:
   - python <(curl -s https://raw.githubusercontent.com/TouK/sputnik-ci/master/sputnik-ci.py)
