@@ -15,7 +15,7 @@ public class App extends Application {
         Prefs.init(this);
         // some DI framework would do this job...
         movieService = MovieClient.createService(MoviesService.class);
-        movieDetailVM=new MovieDetailVM();
+        movieDetailVM=new MovieDetailVM(movieService);
         movieGridVM=new MovieGridVM(movieService);
     }
 

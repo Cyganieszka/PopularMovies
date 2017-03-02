@@ -53,4 +53,5 @@ public abstract class ObservableListAdapter<T,V extends RecyclerView.ViewHolder>
     public int getItemCount() {
         return list.size();
     }
+
 }

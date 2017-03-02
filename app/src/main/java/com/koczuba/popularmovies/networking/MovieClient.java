@@ -62,4 +62,10 @@ public class MovieClient {
 
         return getUrlFromUri(uri);
     }
+
+    public static Uri getYouTubeUri(String movieKey) {
+        Uri uri = Uri.parse("http://www.youtube.com/watch?v=").buildUpon()
+                .appendQueryParameter("v",movieKey).build();
+        return uri;
+    }
 }

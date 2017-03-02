@@ -7,7 +7,8 @@ import android.os.Parcelable
  * Because kotlin data classes are smaller...
  */
 
-class Movie private constructor(val poster_path: String,
+class Movie private constructor(val id: Int,
+                                val poster_path: String,
                                 val original_title: String,
                                 val overview: String,
                                 val vote_average: Float,
@@ -19,11 +20,12 @@ class Movie private constructor(val poster_path: String,
         }
     }
 
-    constructor(source: Parcel) : this(source.readString(), source.readString(), source.readString(), source.readFloat(), source.readString())
+    constructor(source: Parcel) : this(source.readInt(),source.readString(), source.readString(), source.readString(), source.readFloat(), source.readString())
 
     override fun describeContents() = 0
 
     override fun writeToParcel(dest: Parcel?, flags: Int) {
+        dest?.writeInt(id)
         dest?.writeString(poster_path)
         dest?.writeString(original_title)
         dest?.writeString(overview)

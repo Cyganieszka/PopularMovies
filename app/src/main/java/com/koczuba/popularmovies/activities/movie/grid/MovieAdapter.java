@@ -28,7 +28,7 @@ public class MovieAdapter extends ObservableListAdapter<Movie,MovieAdapter.Poste
 
     @Override
     public void onBindViewHolder(PosterViewHolder holder, int position) {
-        holder.binding.setViewModel(new com.koczuba.popularmovies.activities.movie.grid.MovieVM(list.get(position)));
+        holder.binding.setViewModel(new MovieVM(list.get(position)));
         holder.binding.executePendingBindings();
     }
 

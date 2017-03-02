@@ -3,7 +3,8 @@ package com.koczuba.popularmovies.data
 import java.util.ArrayList
 
 /**
- * Because kotlin data classes are smaller...
+ * https://developers.themoviedb.org/3/movies/get-popular-movies
+ * https://developers.themoviedb.org/3/movies/get-top-rated-movies
  */
 
 class MovieListResponse(val page: Int,
