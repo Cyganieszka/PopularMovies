@@ -24,6 +24,7 @@
                 android:background="?attr/colorPrimary"
                 android:title="@{masterViewModel.actionBarTitle}"
                 android:elevation="4dp"
+                tools:targetApi="lollipop"
                 app:layout_constraintTop_toTopOf="parent"
                 android:theme="@style/ThemeOverlay.AppCompat.Dark"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"/>

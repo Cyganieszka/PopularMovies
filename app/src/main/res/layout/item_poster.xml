@@ -15,7 +15,8 @@
                android:adjustViewBounds="true"
                app:posterUrl="@{viewModel.imageUrl}"
                android:layout_width="match_parent"
-               android:layout_height="match_parent"/>
+               android:layout_height="match_parent"
+               android:contentDescription="@string/poster"/>
     <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"

@@ -1,5 +1,6 @@
 package com.koczuba.popularmovies;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
 
@@ -31,6 +32,7 @@ public class Prefs {
     public static String getSortType(){
         return instance.prefs.getString(SORT_TYPE,POPULAR);
     }
+    @SuppressLint("CommitPrefEdits")
     public static void setSortType(String val){
         instance.prefs.edit().putString(SORT_TYPE,val).commit();
     }
